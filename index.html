@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo h2{
+            color: blue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 600;
+            margin-bottom: 0px;
+            letter-spacing: 2px;
+         
+        }
+        .logo h4{
+            margin-top: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 3px;
+            display: inline;
+        }
+        .navbar{
+            padding: 30px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-link{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .nav-link li a{
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3;
+        }
+        .nav-link  li a :hover{
+            cursor:grab;
+        }
+        .nav-button{
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: orange;
+            color:white;
+            border-radius: 4px;
+            border: none;
+        }
+        .nav-section{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        img{
+            
+            width: 23%;
+        }
+        .img-container{
+            position: relative;
+            width: 100%;
+            height: autopx;
+            overflow: hidden;
+        }
+        .img-container img{
+            width: 100%;
+            height:auto;
+            object-fit: cover;
+            display: block;
+        }
+        .button-content{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            z-index: 2;
+        }
+        .button-content h1{
+            font-size: 39px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px black;
+        }
+        .button-group{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .btn{
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .primary{
+            background-color: #ff5c5c;
+            color: white;
+        }
+        .primary:hover{
+            background-color: #e94b4b;
+        }
+        .secondary{
+            background-color: white;
+            color: #333;
+        }
+        .secondary:hover{
+            background-color: #f1f1f1;
+        }
+        .section1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 60px;
+            gap: 40px;
+        }
+        .text-content{
+            flex:1;
+        }
+        .text-content h2{
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .text-content p{
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .image-content{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .image-content img{
+            max-width: 100%;
+            width:100px;
+            border-radius: 10px;
+             
+        }
+        .menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 60px;
+  gap: 30px;
+  background-color: #fff;
+}
+
+.menu-item {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.menu-item h3 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.menu-item p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.menu-item button {
+  padding: 8px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.me{
+    padding-left: 60px;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="logo">
+     <h2>NESAMANI</h2>
+    <H4>RESTAURANT</H4>
+    </div>
+        <nav class="nav-section">
+        <ul class="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#"> Orders</a></li>
+            <li><a href="#">Contact</a></li>
+        
+        </ul>
+        <button class="nav-button">Log in</button>
+    </div>
+    </nav>
+    <div class="img-container">
+    <center><img src="food.jpg">
+    <div class="button-content">
+        <h1>Welcome to Nesamani Resturant</h1>
+        <div class="button-group">
+            <button class="btn primary"> Order Now</button>
+            <button class="btn secondary"> View menu</button>
+        </div>
+    </div></center>
+    </div>
+    <div class="section1">
+    <div class="text-content">
+     <h2>Our story</h2>
+        <p>Nested in the haerst of the city. the Divinetable isn't just a restuarnt; it's an expersience. from the moment you step through the door; the sense of serenity washes over you. Soft, ambient lightning dances across the elegent decor,creating an atmosphere that's both intimate and inviting. The air hums with the a gentle energy, a symphony of soft music and the murmur of cintented dinners.</p>
+        </div>
+        <div class="image">
+   <img src="39c12aa9d782beef6a9aa18617a9ba96.jpg">
+        </div>
+        </div>
+    
+<h2 class="me">Menu</h2>
+  <section class="menu">
+    <div class="menu-item">
+      <img src="e973e9fd5c50d84d4c776ee7afbae51f.jpg" alt="Chicken Nuggets"/>
+      <h3>Chicken Nuggets</h3>
+      <p>Tasty battered chicken bites with a crispy coating.</p>
+      <button>Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="8821bf0a4b4c492f9586145b07708aad.jpg" alt="Pasta Pesto"/>
+      <h3>Pasta Pesto</h3>
+      <p>Delicious green pesto pasta with herbs.</p>
+      <button>Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="d8b5f357e8f6ff9ea4db2f704966c726.jpg" alt="Kebab Salad"/>
+      <h3>Kebab Salad</h3>
+      <p>Grilled kebab strips over fresh veggies.</p>
+      <button>Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="e6d9f3e92829b070f24e61da0c630a69.jpg" alt="Mixed Vegetables"/>
+      <h3>Mixed Vegetables</h3>
+      <p>A healthy mix of steamed veggies.</p>
+      <button>Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="d4bfd54c3f5f672af5be24513e12902f.jpg" alt="Margherita Pizza"/>
+      <h3>Margherita Pizza</h3>
+      <p>Classic cheesy pizza with tomato and basil.</p>
+      <button>Add</button>
+    </div>
+    <div class="menu-item">
+      <img src="2e16da705f288c668e25dc8824e56a60.jpg" alt="Sea Food Platter"/>
+      <h3>Sea Food Platter</h3>
+      <p>Fresh prawns and fish cooked to perfection.</p>
+      <button>Add</button>
+    </div>
+  </section>
+  
